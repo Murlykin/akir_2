@@ -1,15 +1,15 @@
 
-  let slideIndex = 0;
+  let slideIndex = 1;
   const slides = document.getElementsByClassName('slide');
 
   function showSlide(n) {
-    for (let i = 0; i < slides.length; i++) {
+    for (let i = 1; i < slides.length; i++) {
       slides[i].classList.remove('active');
     }
     if (n >= slides.length) {
-      slideIndex = 0;
+      slideIndex = 1;
     }
-    if (n < 0) {
+    if (n < 1) {
       slideIndex = slides.length -1;
     }
     slides[slideIndex].classList.add('active');
