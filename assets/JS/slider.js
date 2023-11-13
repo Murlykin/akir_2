@@ -1,4 +1,3 @@
-
   let slideIndex = 1;
   const slides = document.getElementsByClassName('slide');
 

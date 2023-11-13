@@ -17,7 +17,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-    z-index: 5;
+  z-index: 5;
 }
 
 nav ul li {
@@ -29,14 +29,14 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #555; 
+  background-color: #555;
   border-radius: 5%;
 }
 
 nav ul li a:hover {
-    color: #575757;
-    background-color: #c0c0c0;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #575757;
+  background-color: #c0c0c0;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 nav ul li:hover > ul {
@@ -53,7 +53,6 @@ nav ul ul {
 nav ul ul li {
   display: block;
   width: 200px;
-
 }
 
 nav ul ul li a {
@@ -61,7 +60,7 @@ nav ul ul li a {
 }
 
 nav ul ul li a:hover {
-  background-color: #555;  
+  background-color: #555;
 }
 
 /* Секция со Слайдером йомайо */
@@ -77,12 +76,12 @@ nav ul ul li a:hover {
 }
 
 .slide {
-  position: absolute;  
+  position: absolute;
   width: 80%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;  
-    z-index: -5;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -5;
 }
 
 .slide img {
@@ -104,12 +103,10 @@ nav ul ul li a:hover {
 .slide-content h2 {
   font-size: 24px;
   text-shadow: #fff;
-
 }
 
 .slide-content p {
   font-size: 14px;
-  
 }
 
 .btn {
@@ -143,10 +140,7 @@ nav ul ul li a:hover {
   opacity: 1;
 }
 
-
 /* Секция со Слайдером йомайо */
-
-
 
 .news-section {
   padding: 80px;
@@ -243,4 +237,71 @@ footer nav ul ul li a {
 
 footer nav ul ul li a:hover {
   background-color: #333;
+}
+
+/* ===  */
+
+/* .flex-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-title {
+  color: #000;
+  position: relative;
+  font-size: 6vw;
+  margin: auto;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 15%;
+} */
+
+.showcase {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title1 {
+  width: 100%;
+  height: 100%;
+  font-size: 200px;
+  color: transparent;
+  mix-blend-mode: multiply;
+  -webkit-text-stroke: 1px white;
+margin: 0;
+}
+.position {
+  display: flex;
+  flex-direction: column;
+  z-index: +2;
+  margin-left: auto;
+  margin-right: auto;
+    position: relative;
+    justify-content: center;
+      align-items: center;
+}
+.title2 {
+  width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: transparent;
+    mix-blend-mode: multiply;
+    -webkit-text-stroke: 0.5px white;
+
 }
