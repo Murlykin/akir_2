@@ -155,7 +155,7 @@ nav ul li a:hover {
 }
 .nav__li > a {
   display: flex;
-  margin: 5px;
+  margin: 2px;
   background-color: #9b9797;
   /* transform: translate(-51%, -50%); */
 }
