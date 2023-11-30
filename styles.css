@@ -99,11 +99,11 @@ button {
   margin: 0;
 
 }
-.title2:hover,
+/* .title2:hover,
 .title2:focus {
   box-shadow: 1px 1px 5px rgba(168, 239, 255, 1);
   border-radius: 5px;
-}
+} */
 /* ======================= NAV=========== */
 .nav {
   display: flex;
@@ -302,6 +302,6 @@ nav ul li a:hover {
   }
 
   20% {
-    transform: translateY(-20px)
+    transform: translateY(-2px)
   }
 }
