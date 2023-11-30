@@ -72,12 +72,12 @@ button {
   margin: 0;
   text-decoration: none;
 }
-.title1__animation:hover,
+/* .title1__animation:hover,
 .title1__animation:focus
 {
   box-shadow: 1px 1px 5px rgba(168, 239, 255, 1);
   border-radius: 5px;
-}
+} */
 .position {
   display: flex;
   flex-direction: column;
@@ -276,5 +276,32 @@ nav ul li a:hover {
     height: calc(100% - 12px);
     background: #000;
     border-radius: 5px;
+  }
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+  padding-bottom: 30px;
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-20px)
   }
 }
