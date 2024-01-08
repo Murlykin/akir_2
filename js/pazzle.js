@@ -1486,7 +1486,7 @@ function lookForLoops (tbCases) {
 
 window.addEventListener("load", function(){
 
-let img = '../images/pic.png';
+let img = '../images/image.jpg';
 
 autoStart = isMiniature(); // used for nice miniature in CodePen
 
