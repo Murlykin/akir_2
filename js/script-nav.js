@@ -4,15 +4,15 @@ const navLinks = document.querySelectorAll(".conic");
 navLinks.forEach(onTabClick);
 
 
-function onTabClick(a) {
-    a.addEventListener("click", function () { 
-        let currentBtn = a;
+function onTabClick(li) {
+    li.addEventListener("click", function () { 
+        let currentBtn = li;
         let tabId = currentBtn.getAttribute("href");
         // let currentTab = document.querySelector(tabId);
 
         if (!currentBtn.classList.contains('active')) {
-            navLinks.forEach(function (a) {
-                a.classList.remove('active');
+            navLinks.forEach(function (li) {
+                li.classList.remove('active');
             });
     
             // tabsItems.forEach(function (item) {
